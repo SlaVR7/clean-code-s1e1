@@ -37,7 +37,7 @@
 .main__task {
   width: 56%;
   display: inline-block;
-  flex-grow: 1
+  flex-grow: 1;
 }
 
 .main__row-wrapper {
@@ -139,7 +139,7 @@ input,.main__btn{
 }
 
 .main__task_input {
-  width: 226px
+  width: 226px;
 }
 
 .main__remove {
@@ -155,19 +155,19 @@ input,.main__btn{
 /* Completed */
 
 .main__completed_label {
-  text-decoration: line-through
+  text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
 
 .main__task_input:not(:first-child) {
-  display: none
+  display: none;
 }
 
 .edit-mode .main__task_input {
   display: inline-block;
-  width: 224px
+  width: 224px;
 }
 
 .edit-mode__label {
