@@ -18,6 +18,7 @@ var completedTasksHolder=document.getElementById("main__completed");//completed-
 var createNewTaskElement=function(taskString){
 
     var listItem=document.createElement("li");
+    listItem.classList.add('main__item');
 
     //input (checkbox)
     var checkBox=document.createElement("input");//checkbx
@@ -31,14 +32,16 @@ var createNewTaskElement=function(taskString){
     //button.delete
     var deleteButton=document.createElement("button");//delete button
     var deleteButtonImg=document.createElement("img");//delete button image
+    deleteButtonImg.classList.add('main__remove');
 
     label.innerText=taskString;
     label.className='main__task';
 
     //Each elements, needs appending
     checkBox.type="checkbox";
+    checkBox.classList.add('main__checkbox');
     editInput.type="text";
-    editInput.className="main__task";
+    editInput.className="main__task main__task_input";
 
     editButton.innerText="Edit"; //innerText encodes special characters, HTML does not.
     editButton.className="main__btn main__btn_edit";
@@ -100,6 +103,7 @@ var editTask=function(){
 
     //toggle .editmode on the parent.
     listItem.classList.toggle("edit-mode");
+    label.classList.toggle('edit-mode__label');
 };
 
 
@@ -123,6 +127,7 @@ var taskCompleted=function(){
     var listItem=this.parentNode;
     completedTasksHolder.appendChild(listItem);
     bindTaskEvents(listItem, taskIncomplete);
+
 
 }
 
