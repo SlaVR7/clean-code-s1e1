@@ -50,11 +50,11 @@ ul {
 }
 
 li, h3 {
-  list-style:none;
+  list-style: none;
 }
 
 input,.main__btn{
-  outline:none;
+  outline: none;
 }
 
 .main__btn {
@@ -162,14 +162,14 @@ input,.main__btn{
 /* Edit Task */
 
 .main__task_input:not(:first-child) {
-  display:none
+  display: none
 }
 
 .edit-mode .main__task_input {
-  display:inline-block;
-  width:224px
+  display: inline-block;
+  width: 224px
 }
 
 .edit-mode__label {
-  display:none;
+  display: none;
 }
